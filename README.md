@@ -1,5 +1,5 @@
 # Project 2
-
+This app will solve wastage problem.
 ## Objectives
 
 # Data Structure
