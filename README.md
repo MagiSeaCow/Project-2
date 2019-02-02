@@ -1,6 +1,8 @@
 # Project 2
-This app will solve wastage problem.
+This app will solve food wastage problem.
+
 ## Objectives
+
 
 # Data Structure
 

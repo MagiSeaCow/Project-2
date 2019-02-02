@@ -32,7 +32,7 @@ router.post('/foods/insertOne', function(req, res) {
 router.put('/foods/updateOne/:id', function(req, res) {
 	var condition = 'id = ' + req.params.id;
 	console.log('condition', condition);
-
+ 
 	food.updateOne({devoured: req.body.devoured}, condition, function() {
 		res.redirect('/index');
 	});
