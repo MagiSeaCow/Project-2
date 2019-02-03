@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules
 
 # Compiled source #
@@ -37,3 +38,11 @@ node_modules
 .Trashes
 ehthumbs.db
 Thumbs.db
+=======
+.DS_Store
+node_modules
+npm-debug.log
+.env
+
+
+>>>>>>> dca497898162609fcb11cfa799a937950c14e21d
