@@ -1,0 +1,20 @@
+.num{
+    color: green;
+    text-transform: uppercase;
+    text-decoration: green;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+#foodie{
+position: absolute; 
+top:60px; 
+left:10px; 
+width:600px;
+height:600px;
+margin-left: 150px;
+margin-bottom: 30px;
+}
