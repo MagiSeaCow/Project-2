@@ -1,5 +1,4 @@
-DROP DATABASE IF EXISTS Food_db;
-
+USE `y01psu6qswte7x3a`;
 CREATE DATABASE Food_db;
 
 USE Food_db;
