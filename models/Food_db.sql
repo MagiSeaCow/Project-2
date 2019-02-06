@@ -140,20 +140,20 @@ CREATE TABLE fruit (
 );
 
 INSERT INTO fruit(item, price, exp_date, quantity)
-VALUES ("Apples ", , 14, "");
+VALUES ("Apples ", 1, 14, 4);
 INSERT INTO fruit(item, price, exp_date, quantity)
-VALUES ("Strawberry ", , 7, "");
+VALUES ("Strawberry ", 1, 7, 1);
 INSERT INTO fruit(item, price, exp_date, quantity)
-VALUES ("Blueberries ", , 14, "");
+VALUES ("Blueberries ", 1 , 14, 1);
 INSERT INTO fruit(item, price, exp_date, quantity)
-VALUES ("Pineapple ", , 4, "");
+VALUES ("Pineapple ", 1, 4, 1);
 INSERT INTO fruit(item, price, exp_date, quantity)
-VALUES ("Bananas ", , 5, "");
+VALUES ("Bananas ", 1, 5, 4);
 INSERT INTO fruit(item, price, exp_date, quantity)
-VALUES ("Avocados ", , 5, "");
+VALUES ("Avocados ", 2, 5, 2);
 INSERT INTO fruit(item, price, exp_date, quantity)
-VALUES ("Lemons ", , 14, "");
+VALUES ("Lemons ", 2, 14, 2);
 INSERT INTO fruit(item, price, exp_date, quantity)
-VALUES ("Melons ", , 10, "");
+VALUES ("Melons ", 2, 10, 1);
 
 SELECT * FROM fruit;
