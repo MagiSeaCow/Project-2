@@ -1,8 +1,4 @@
-DROP DATABASE IF EXISTS Food_db;
-
-CREATE DATABASE Food_db;
-
-USE Food_db;
+USE `y01psu6qswte7x3a`;
 
 CREATE TABLE meat (
   item_id INT NOT NULL AUTO_INCREMENT,
@@ -13,8 +9,6 @@ CREATE TABLE meat (
   PRIMARY KEY (item_id)
 );
 
---put in the information for price and expiration into each item
---we are leaving quantity as a blank because this number will be passed in by user
 INSERT INTO meat(item, price, exp_date, quantity)
 VALUES ("Beef ", 4.48, 60, "");
 INSERT INTO meat(item, price, exp_date, quantity)
@@ -41,10 +35,8 @@ CREATE TABLE seafood (
   PRIMARY KEY (item_id)
 );
 
---put in the information for price and expiration into each item
---we are leaving quantity as a blank because this number will be passed in by user
 INSERT INTO meat(item, price, exp_date, quantity)
-VALUES ("Shrimp ", 4.48, 5, "");
+VALUES ("Shrimp ", 4.48, 5, 2);
 INSERT INTO meat(item, price, exp_date, quantity)
 VALUES ("Salmon ", 16.94, 2, "");
 INSERT INTO meat(item, price, exp_date, quantity)
@@ -69,8 +61,6 @@ CREATE TABLE grains (
   PRIMARY KEY (item_id)
 );
 
---put in the information for price and expiration into each item
---we are leaving quantity as a blank because this number will be passed in by user
 INSERT INTO grains(item, price, exp_date, quantity)
 VALUES ("Rice ", 5.76, 365, "");
 INSERT INTO grains(item, price, exp_date, quantity)
@@ -81,6 +71,15 @@ INSERT INTO grains(item, price, exp_date, quantity)
 VALUES ("Pasta ", 4.98, 365, "");
 INSERT INTO grains(item, price, exp_date, quantity)
 VALUES ("Flour ", 4.88, 365, "");
+VALUES ("Rice ", 10, 365, 1);
+INSERT INTO grains(item, price, exp_date, quantity)
+VALUES ("Quinoa ", 10 , 365, 1);
+INSERT INTO grains(item, price, exp_date, quantity)
+VALUES ("Beans ", 10 , 365, 1);
+INSERT INTO grains(item, price, exp_date, quantity)
+VALUES ("Pasta ", 10 , 365, 1);
+INSERT INTO grains(item, price, exp_date, quantity)
+VALUES ("Flour ", 10 , 365, 1);
 
 SELECT * FROM grains;
 
@@ -93,8 +92,6 @@ CREATE TABLE vegetables (
   PRIMARY KEY (item_id)
 );
 
---put in the information for price and expiration into each item
---we are leaving quantity as a blank because this number will be passed in by user
 INSERT INTO vegetables(item, price, exp_date, quantity)
 VALUES ("Spinach ", 2.57, 7, "");
 INSERT INTO vegetables(item, price, exp_date, quantity)
@@ -123,8 +120,6 @@ CREATE TABLE dairy (
   PRIMARY KEY (item_id)
 );
 
---put in the information for price and expiration into each item
---we are leaving quantity as a blank because this number will be passed in by user
 INSERT INTO dairy(item, price, exp_date, quantity)
 VALUES ("Milk ", 3.49, 7, "");
 INSERT INTO dairy(item, price, exp_date, quantity)
@@ -137,6 +132,21 @@ INSERT INTO dairy(item, price, exp_date, quantity)
 VALUES ("Custard ", 5.99, 6, "");
 INSERT INTO dairy(item, price, exp_date, quantity)
 VALUES ("Pudding ", 4.23, 10, "");
+VALUES ("Milk ", , 7, 1);
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Butter ", , 14, 1);
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Cheese ", , 7, 1);
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Yogurt ", , 21, 1);
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Custard ", , 6, 1);
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Cream ", , 10, 1);
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Pudding ", , 28, 1);
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Margarine ", , 60, 1);
 
 SELECT * FROM dairy;
 
@@ -149,8 +159,6 @@ CREATE TABLE fruit (
   PRIMARY KEY (item_id)
 );
 
---put in the information for price and expiration into each item
---we are leaving quantity as a blank because this number will be passed in by user
 INSERT INTO fruit(item, price, exp_date, quantity)
 VALUES ("Apples ", 1.49, 14, "");
 INSERT INTO fruit(item, price, exp_date, quantity)
@@ -167,5 +175,20 @@ INSERT INTO fruit(item, price, exp_date, quantity)
 VALUES ("Lemons ", 1.99, 14, "");
 INSERT INTO fruit(item, price, exp_date, quantity)
 VALUES ("Melons ", 4.66, 10, "");
+VALUES ("Apples ", 1, 14, 4);
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Strawberry ", 1, 7, 1);
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Blueberries ", 1 , 14, 1);
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Pineapple ", 1, 4, 1);
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Bananas ", 1, 5, 4);
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Avocados ", 2, 5, 2);
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Lemons ", 2, 14, 2);
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Melons ", 2, 10, 1);
 
 SELECT * FROM fruit;
