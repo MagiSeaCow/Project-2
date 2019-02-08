@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var food = require('../models/food.js');
+var food = require('../models/index.js');
 
 router.get('/', function(req, res) {
 	res.redirect('/index');

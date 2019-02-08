@@ -13,7 +13,7 @@ This app will solve food wastage problem.
 │   └── orm.js
 │ 
 ├── controllers
-│   └── burgers_controller.js
+│   └── food_controller.js
 │
 ├── db
 │   ├── schema.sql
