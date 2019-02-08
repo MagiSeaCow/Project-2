@@ -62,6 +62,15 @@ CREATE TABLE grains (
 );
 
 INSERT INTO grains(item, price, exp_date, quantity)
+VALUES ("Rice ", 5.76, 365, "");
+INSERT INTO grains(item, price, exp_date, quantity)
+VALUES ("Quinoa ", 10.23, 365, "");
+INSERT INTO grains(item, price, exp_date, quantity)
+VALUES ("Beans ", 5.88, 365, "");
+INSERT INTO grains(item, price, exp_date, quantity)
+VALUES ("Pasta ", 4.98, 365, "");
+INSERT INTO grains(item, price, exp_date, quantity)
+VALUES ("Flour ", 4.88, 365, "");
 VALUES ("Rice ", 10, 365, 1);
 INSERT INTO grains(item, price, exp_date, quantity)
 VALUES ("Quinoa ", 10 , 365, 1);
@@ -84,21 +93,21 @@ CREATE TABLE vegetables (
 );
 
 INSERT INTO vegetables(item, price, exp_date, quantity)
-VALUES ("Spinach ", , 7, "");
+VALUES ("Spinach ", 2.57, 7, "");
 INSERT INTO vegetables(item, price, exp_date, quantity)
-VALUES ("Kale ", , 7, "");
+VALUES ("Kale ", 2.47, 7, "");
 INSERT INTO vegetables(item, price, exp_date, quantity)
-VALUES ("Carrots ", , 20, "");
+VALUES ("Carrots ", 1.68, 20, "");
 INSERT INTO vegetables(item, price, exp_date, quantity)
-VALUES ("Cucumber ", , 7, "");
+VALUES ("Cucumber ", 2.99, 7, "");
 INSERT INTO vegetables(item, price, exp_date, quantity)
-VALUES ("Tomatoes ", , 6, "");
+VALUES ("Tomatoes ", 1.99, 6, "");
 INSERT INTO vegetables(item, price, exp_date, quantity)
-VALUES ("Cabbage ", , 7, "");
+VALUES ("Cabbage ", 1.99, 7, "");
 INSERT INTO vegetables(item, price, exp_date, quantity)
-VALUES ("Lettuce ", , 7, "");
+VALUES ("Lettuce ", 1.49, 7, "");
 INSERT INTO vegetables(item, price, exp_date, quantity)
-VALUES ("Potatoes ", , 10, "");
+VALUES ("Potatoes ", 2.99, 10, "");
 
 SELECT * FROM vegetables;
 
@@ -112,6 +121,17 @@ CREATE TABLE dairy (
 );
 
 INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Milk ", 3.49, 7, "");
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Butter ", 2.94, 14, "");
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Cheese ", 2.49, 7, "");
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Yogurt ", 3.78, 21, "");
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Custard ", 5.99, 6, "");
+INSERT INTO dairy(item, price, exp_date, quantity)
+VALUES ("Pudding ", 4.23, 10, "");
 VALUES ("Milk ", , 7, 1);
 INSERT INTO dairy(item, price, exp_date, quantity)
 VALUES ("Butter ", , 14, 1);
@@ -140,6 +160,21 @@ CREATE TABLE fruit (
 );
 
 INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Apples ", 1.49, 14, "");
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Strawberry ", 3.25, 7, "");
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Blueberries ", 2.99, 14, "");
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Pineapple ", 2.99, 4, "");
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Bananas ", 1.49, 5, "");
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Avocados ", .99, 5, "");
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Lemons ", 1.99, 14, "");
+INSERT INTO fruit(item, price, exp_date, quantity)
+VALUES ("Melons ", 4.66, 10, "");
 VALUES ("Apples ", 1, 14, 4);
 INSERT INTO fruit(item, price, exp_date, quantity)
 VALUES ("Strawberry ", 1, 7, 1);
