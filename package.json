@@ -17,12 +17,11 @@
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
     "faker": "^4.1.0",
-    "googleapis": "^27.0.0",
-    "handlebars": "^4.0.12",
+    "handlebars": "^4.1.0",
     "moment": "^2.24.0",
     "mysql": "^2.16.0",
-    "mysql2": "^1.6.4",
     "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "sequelize": "^4.42.0"
   },
   "devDependencies": {
