@@ -1,6 +1,5 @@
 # Project 2
 This app will solve food wastage problem.
-
 ## Objectives
 
 
