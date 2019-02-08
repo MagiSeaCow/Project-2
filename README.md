@@ -31,7 +31,7 @@ This app will solve food wastage problem.
 │       ├── js
 │       │   └── index.js
 │       │   └── login.js
-│       │   └── signOn.js
+│       │   └── signup.js
 │       ├── css
 │       │   └── style.css
 │       └── img
