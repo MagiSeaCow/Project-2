@@ -1,6 +1,5 @@
 # Project 2
 This app will solve food wastage problem.
-
 ## Objectives
 
 
@@ -13,31 +12,41 @@ This app will solve food wastage problem.
 │   └── orm.js
 │ 
 ├── controllers
-│   └── burgers_controller.js
+│   └── food_controller.js
 │
 ├── db
 │   ├── schema.sql
 │   └── seeds.sql
 │
 ├── models
-│   └── burger.js
-│ 
+│   └── index.js
+│   └── Food_db.sql
 ├── node_modules
 │ 
 ├── package.json
 │
 ├── public
 │   └── assets
+│       ├── js
+│       │   └── index.js
+│       │   └── login.js
+│       │   └── signup.js
 │       ├── css
 │       │   └── style.css
 │       └── img
-│           └── burger.png
+│           └── background.jpeg
 │   
 │
 ├── server.js
 │
 └── views
     ├── index.handlebars
+    ├── 404.handlebars
+    ├── controllers.handlebars
+    ├── dashboard.handlebars
+    ├── login.handlebars
+    ├── newuser.handlebars
+    ├── signup.handlebars
     └── layouts
         └── main.handlebars
 ```
@@ -51,7 +60,10 @@ This app will solve food wastage problem.
 * Javascript
 * Node JS
 * Handlebars
+* Passport
 * MySQL
+* Moment
+* Express-session
 * ORM
 * Github
 

@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var food = require('../models/food.js');
+var food = require('../models/index.js');
 
 router.get('/', function(req, res) {
 	res.redirect('/index');
@@ -26,9 +26,7 @@ router.post('/foods/insertOne', function(req, res) {
 	});
 });
 
-// add a '/burgers/updateOne/:id' route that updates
-// the status of the burger from being uneaten to eaten
-// then does a callback that redirects to the /index endpoint
+
 router.put('/foods/updateOne/:id', function(req, res) {
 	var condition = 'id = ' + req.params.id;
 	console.log('condition', condition);
