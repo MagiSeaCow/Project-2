@@ -18,16 +18,22 @@ app.use(passport.session());
 
 
 // Routes
+app.use(routes);
 require("./routes/apiRoutes")(app);
+app.use(routes);
 require("./routes/htmlRoutes")(app);
 
-var syncOptions = { force: false };
+
+//app use for public directory
+app.use(express.static("public"));
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
 if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
+
+
 
  // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
