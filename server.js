@@ -12,41 +12,22 @@ var routes = require('./routes/api-routes');
 var PORT = process.env.PORT || 8080;
 
 
-// app.use(bodyParser.urlencoded({
-//   extended: false
-// }));
-// app.use(bodyParser.json());
-// app.use(express.static("public"));
-// app.use(
-//   expressSession({
-//     secret: "keyboard cat",
-//     resave: true,
-//     saveUnintialized: true
-//   })
-// );
-// app.use(passport.initialize());
-// app.use(passport.session());
 
-// Handlebars
-// app.engine(
-//   "handlebars",
-//   exphbs({
-//     defaultLayout: "main"
-//   })
-// );
-// app.set("view engine", "handlebars");
+app.use(passport.initialize());
+app.use(passport.session());
 
-// // Routes
-// require("./routes/apiRoutes")(app);
-// require("./routes/htmlRoutes")(app);
 
-// var syncOptions = { force: false };
+// Routes
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
-// // If running a test, set syncOptions.force to true
-// // clearing the `testdb`
-// if (process.env.NODE_ENV === "test") {
-//   syncOptions.force = true;
-// }
+var syncOptions = { force: false };
+
+// If running a test, set syncOptions.force to true
+// clearing the `testdb`
+if (process.env.NODE_ENV === "test") {
+  syncOptions.force = true;
+}
 
  // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
