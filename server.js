@@ -4,19 +4,10 @@ var express = require("express");
 var app = express();
 var routes = require('./routes/api-routes');
 
-// require("./routes/apiRoutes")(app);
-// require("./routes/htmlRoutes")(app);
-
-
-
-// var passport = require("./config/passport");
-// var expressSession = require("express-session"); //sessions for cookies
  var db = require("./models");
-// app.use(cookieParser())
 
 
 
-// app.listen(3000)
 
 var PORT = process.env.PORT || 8080;
 
