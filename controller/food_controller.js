@@ -6,35 +6,35 @@ router.get('/', function(req, res) {
 	res.redirect('/index');
 });
 
-// // add a '/index/' endpoint that gets all the burgers
-// // then renders the index file by passing in all the burgers
-// // as an object for handlebars to use
-// router.get('/index', function(req, res) {
-// 	food.selectAll(function(data) {
-// 		var hbsObject = {foods: data};
-// 		console.log(hbsObject);
-// 		res.render('index', hbsObject);
-// 	});
-// });
+// add a '/index/' endpoint that gets all the burgers
+// then renders the index file by passing in all the burgers
+// as an object for handlebars to use
+router.get('/index', function(req, res) {
+	food.selectAll(function(data) {
+		var hbsObject = {foods: data};
+		console.log(hbsObject);
+		res.render('index', hbsObject);
+	});
+});
 
-// // add a '/food/insertOne' endpoint that posts the 
-// // Food name the user entered then as a callback it
-// // redirects back to the /index route
-// router.post('/foods/insertOne', function(req, res) {
-// 	burger.insertOne(['food_name', 'devoured'], [req.body.name, false], function() {
-// 		res.redirect('/index');
-// 	});
-// });
+// add a '/food/insertOne' endpoint that posts the 
+// Food name the user entered then as a callback it
+// redirects back to the /index route
+router.post('/foods/insertOne', function(req, res) {
+	burger.insertOne(['food_name', 'devoured'], [req.body.name, false], function() {
+		res.redirect('/index');
+	});
+});
 
 
-// router.put('/foods/updateOne/:id', function(req, res) {
-// 	var condition = 'id = ' + req.params.id;
-// 	console.log('condition', condition);
+router.put('/foods/updateOne/:id', function(req, res) {
+	var condition = 'id = ' + req.params.id;
+	console.log('condition', condition);
  
-// 	food.updateOne({devoured: req.body.devoured}, condition, function() {
-// 		res.redirect('/index');
-// 	});
-// });
+	food.updateOne({devoured: req.body.devoured}, condition, function() {
+		res.redirect('/index');
+	});
+});
 
 // export the router (controller) back to the server
 module.exports = router;
