@@ -1,17 +1,15 @@
 //dependencies
 var express = require("express");
+
 // Routes
 var app = express();
 var routes = require('./routes/api-routes');
 
- var db = require("./models");
-
-
-
+var db = require("./models");
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 var PORT = process.env.PORT || 8080;
-
-
 
 app.use(passport.initialize());
 app.use(passport.session());
