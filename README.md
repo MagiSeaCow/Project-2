@@ -8,12 +8,14 @@ This app will solve food wastage problem.
 ```
 .
 ├── config
+│   ├──config.json
 │   ├── connection.js
 │   └── orm.js
+│   └── passport.js
 │ 
 ├── controllers
 │   └── food_controller.js
-│
+│   └── food_controller.js
 ├── db
 │   ├── schema.sql
 │   └── seeds.sql
